@@ -30,5 +30,8 @@ unsetopt flowcontrol
 
 setopt auto_menu
 
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
 PYTHON_BIN_PATH=$(python3 -m site --user-base)/bin
 export PATH="$PATH:$PYTHON_BIN_PATH"
